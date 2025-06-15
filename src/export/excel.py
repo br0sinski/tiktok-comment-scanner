@@ -6,7 +6,7 @@ def export_comment_to_excel(id: str, author: str, text: str, likes_count: int, f
     out_dir = os.path.join(root_dir, "out")
     os.makedirs(out_dir, exist_ok=True)
 
-    excel_filename = os.path.join(out_dir, f"video_id_{filename}.xlsx")
+    excel_filename = os.path.join(out_dir, filename)
     file_exists = os.path.exists(excel_filename)
 
     if file_exists:
