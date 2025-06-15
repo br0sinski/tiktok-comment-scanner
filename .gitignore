@@ -202,3 +202,4 @@ __marimo__/
 targets.json
 
 out/
+comment_state.json
