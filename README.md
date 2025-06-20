@@ -1,6 +1,6 @@
 # 🎵 TikTok Comment Scanner 🎵
 
-A tool I wrote for my girlfriend, for her bachelor thesis.
+A tool I wrote for my girlfriend, scientifically assist in her bachelor thesis.
 ⚠️ Keep in mind this is a tool for personal use, the codebase is not the best - it's very tailored for one specific use and that is to fetch EVERY comment of an array of TikTok Videos.
 
 Use with caution!
