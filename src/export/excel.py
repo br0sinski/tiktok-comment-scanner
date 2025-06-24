@@ -1,5 +1,6 @@
 import os
 from openpyxl import Workbook, load_workbook
+from datetime import datetime
 
 def export_comment_to_excel(id: str, author: str, text: str, likes_count: int, filename: str, overwrite=False):
     root_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -19,7 +20,8 @@ def export_comment_to_excel(id: str, author: str, text: str, likes_count: int, f
     else:
         wb = Workbook()
         ws = wb.active
-        ws.append(["id", "author", "text", "likes_count"])
+        ws["A1"] = f"Date generated: {datetime.now().strftime('%Y-%m-%d')}"
+        ws.append(["id", "author", "text", "likes_count"])  
 
-    ws.append([id, author, text, likes_count])
+    ws.append([id, author, text, likes_count])  
     wb.save(excel_filename)
